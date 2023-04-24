@@ -3,7 +3,7 @@
   <div class="container-fluid">
     {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
-        <a class="navbar-brand" href=""><span>Dibo Security</span></a>
+        <a class="navbar-brand" style="margin-bottom: 0.35ex;" href=""><span>Dibo Security</span></a>
       {% else %}
         <a class="navbar-brand" href=""><span>Dibo Security</span></a>
       {% endif %}

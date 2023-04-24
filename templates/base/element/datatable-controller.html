@@ -1,0 +1,34 @@
+{% load qs_pop %}
+{% block content %}
+  <div class="mb-2">
+    <div class="d-flex justify-content-between align-items-center">
+      <div></div>
+      <div class="wrapper">
+        <div class="input-group">
+          <label class="">
+            <input
+                type="search"
+                onkeyup=""
+                class="form-control"
+                placeholder="Søg her">
+          </label>
+          <a href="{% if not request.GET.username %}?{{ request.GET.urlencode }}&username={{ request.user.username }}{% else %}?{{ request.GET|qs_pop:"username" }}{% endif %}"
+             class="btn {% if request.GET.username == request.user.username %}btn-danger{% else %}btn-primary{% endif %} me-1">
+            {% if request.GET.username == request.user.username %}
+              <i class="bi bi-person-circle"></i>
+            {% else %}
+              <i class="bi bi-asterisk"></i>
+            {% endif %}
+          </a>
+          <button class="btn btn-secondary"
+                  style="width: 2.75rem;"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasLoanTableSettings"
+          ><i class="bi bi-sliders2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
