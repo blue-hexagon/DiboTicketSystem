@@ -1,0 +1,33 @@
+{% extends 'base/app/base.html' %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <div class="mt-5 mb-5">
+          <h1 class="display-5 text-center">Dibo Login</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 offset-4">
+        <form class="" method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="user" class="form-label">Brugernavn</label>
+            <input type="text" class="form-control" name="username" placeholder="Brugernavn" id="user">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control " name="password" placeholder="Password" id="password">
+          </div>
+          <div class="d-block block d-grid gap-2">
+            <button class="btn btn-success" style="margin-top: 1rem;" type="submit">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+{% endblock content %}

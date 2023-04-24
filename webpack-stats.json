@@ -1,0 +1,34 @@
+{
+  "status": "done",
+  "assets": {
+    "fonts/en/4753c5ba57962b4d7bf8.woff?1fa40e8900654d2863d011707b9fb6f2": {
+      "name": "fonts/en/4753c5ba57962b4d7bf8.woff?1fa40e8900654d2863d011707b9fb6f2",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\fonts\\en\\4753c5ba57962b4d7bf8.woff",
+      "publicPath": "http://localhost:8001/fonts/en/4753c5ba57962b4d7bf8.woff?1fa40e8900654d2863d011707b9fb6f2"
+    },
+    "fonts/en/6d63d0501e5ed7b79dab.woff2?1fa40e8900654d2863d011707b9fb6f2": {
+      "name": "fonts/en/6d63d0501e5ed7b79dab.woff2?1fa40e8900654d2863d011707b9fb6f2",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\fonts\\en\\6d63d0501e5ed7b79dab.woff2",
+      "publicPath": "http://localhost:8001/fonts/en/6d63d0501e5ed7b79dab.woff2?1fa40e8900654d2863d011707b9fb6f2"
+    },
+    "main_js-7a529a47cdd23c559c77.js": {
+      "name": "main_js-7a529a47cdd23c559c77.js",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-7a529a47cdd23c559c77.js",
+      "publicPath": "http://localhost:8001/main_js-7a529a47cdd23c559c77.js"
+    },
+    "main_style-7a529a47cdd23c559c77.js": {
+      "name": "main_style-7a529a47cdd23c559c77.js",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-7a529a47cdd23c559c77.js",
+      "publicPath": "http://localhost:8001/main_style-7a529a47cdd23c559c77.js"
+    }
+  },
+  "chunks": {
+    "main_js": [
+      "main_js-7a529a47cdd23c559c77.js"
+    ],
+    "main_style": [
+      "main_style-7a529a47cdd23c559c77.js"
+    ]
+  },
+  "publicPath": "http://localhost:8001/"
+}

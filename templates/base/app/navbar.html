@@ -1,0 +1,48 @@
+{% load static %}
+<nav class="navbar navbar-expand navbar-light">
+  <div class="container-fluid">
+    {% if request.user.is_authenticated %}
+      {% if request.user.is_superuser %}
+        <a class="navbar-brand" href=""><span>Dibo Security</span></a>
+      {% else %}
+        <a class="navbar-brand" href=""><span>Dibo Security</span></a>
+      {% endif %}
+    {% else %}
+      <a class="navbar-brand" href="{% url 'frontpage' %}"><span>Dibo Security</span></a>
+    {% endif %}
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link" href="">Aktive Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Afsluttede Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Log</a>
+          </li>
+        {% endif %}
+      </ul>
+      <div class="d-flex justify-content-around no-wrap navbar-text">
+        {% if request.user.is_authenticated %}
+          <div class="dropdown me-1">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              {{ request.user.username|capfirst }}
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'password_change' %}">Ændre Kodeord</a></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+          </div>
+        {% else %}
+          <a href="{% url 'password_reset' %}" class="btn btn-success text-white me-1">Glemt Kodeord </a>
+          <a href="{% url 'login' %}" class="btn btn-primary text-white">Login</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</nav>

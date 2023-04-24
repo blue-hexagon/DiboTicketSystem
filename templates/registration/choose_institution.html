@@ -1,0 +1,22 @@
+{% extends 'base/app/base.html' %}
+{% block content %}
+  <div class="container mt-5">
+    <h1 class="display-4 text-center mb-5">Vælg Institution</h1>
+    <div class="row">
+      <div class="col-4 offset-4 list-group">
+        {% block institution %}
+          {% for institution in institutions %}
+            <a href="{% url 'institution-set-id' institution.institution_id %}" class="list-group-item list-group-item-action  {% if user_institution_id == institution.institution_id|stringformat:"i" %}active{% endif %}">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{ institution.organization_name }} {{ institution.city }}</h5>
+                <small>{{ institution.postal_number }}, {{ institution.street_name }} {{ institution.street_number }}</small>
+              </div>
+            </a>
+          {% endfor %}
+        {% endblock %}
+        <a class="btn btn-success text-center mt-3" href="{% url 'institution-detail' user_institution_id %}">Fortsæt</a>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% block baseform %}
+  {% csrf_token %}
+  {{ form.non_field_errors }}
+  {% for field in form %}
+    <div class="fieldWrapper mb-3">
+      {{ field.label_tag }} {{ field }}
+      {% if field.errors %}
+        <div class="small text-danger fw-semibold"> {{ field.errors.as_text|slice:"1:" }}</div>
+      {% else %}
+        {% if field.help_text %}
+          <span class="small text-black-50 ">{{ field.help_text|safe }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,48 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  {#  Webpack  #}
+  {% render_bundle 'main_style' %}
+
+  {# Opengrah, SEO, Misc. #}
+  <title>Dibo Security</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  {#  <script src="{% static 'js/darkmode/darkmode.js' %}"></script>#}
+  {#  <script>#}
+  {#    ThemeLocalStorage.setAutoThemeHoursIfUninitialized()#}
+  {#    ThemeController.applyTheme();#}
+  {#  </script>#}
+</head>
+
+<body class="ui container mx-auto" style="margin-bottom: 5rem;">
+{% with request.resolver_match.url_name as url_name %}
+  {% include 'base/app/navbar.html' %}
+  {#    {% include 'base/app/navbar_borrower.html' %}#}
+  {% block content %}{% endblock %}
+  {% if request.user.is_staff or request.user.is_superuser %}
+    {#    {% include "base/app/fixed-footer.html" %}#}
+  {% endif %}
+  <div class="" style="height: 8rem;"></div>
+  {% include "base/app/footer.html" %}
+  {% include "extendable/toast.html" %}
+{% endwith %}
+{% render_bundle 'main_js' attrs='defer' %}
+<script>
+  document.body.addEventListener('htmx:configRequest', (event) => {
+    event.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+  })
+</script>
+</body>
+</html>

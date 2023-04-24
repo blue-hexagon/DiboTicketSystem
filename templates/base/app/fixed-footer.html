@@ -1,0 +1,21 @@
+{% block fixedfooter %}
+  {% if request.user.is_authenticated %}
+    <footer class="page-footer fixed-bottom footer mt-auto py-2 bg-body-secondary" style="border-top: 1px solid rgba(0, 0, 0, 0.125);">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="me-1">
+            {#            @formatter:off          #}
+            <a href="?report=active&limit={% if 'limit' in request.session %}{{ request.session.limit }}{% else %}25{% endif %}&page=1&username={{ request.user.username }}"
+                class="btn btn-primary ">
+              Mine Udlån
+            </a>
+          {#            @formatter:on          #}
+          </div>
+          <div class="btn-group me-1">
+            <a type="button" class="btn btn-primary text-white" href="">Opret Lån</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+{% endblock %}
