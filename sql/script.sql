@@ -1,23 +1,23 @@
-\! chcp 65001
-
 DROP DATABASE dibo_security;
 DROP USER dibo_admin;
 
 CREATE USER dibo_admin WITH SUPERUSER ENCRYPTED PASSWORD 'Kode1234!' LOGIN CREATEDB CREATEROLE;
 CREATE DATABASE dibo_security WITH OWNER dibo_admin;
 GRANT ALL PRIVILEGES ON DATABASE dibo_security TO dibo_admin;
+\c dibo_security dibo_admin;
+\! chcp 65001
+SET CLIENT_ENCODING TO 'UTF-8';
 
 ALTER ROLE dibo_admin SET client_encoding TO 'UTF-8';
 ALTER ROLE dibo_admin SET default_transaction_isolation TO 'read committed';
 ALTER ROLE dibo_admin SET timezone TO 'Europe/Copenhagen';
 SET timezone = 'Europe/Copenhagen';
-SET CLIENT_ENCODING TO 'UTF-8';
 
-SELECT pg_sleep(10);
+SELECT pg_sleep(2);
 -- Run: 'python manage.py migrate'
 -- Run: 'python manage.py create_users'
 -- Run: 'python manage.py inspectdb > dirty_models.py' to export models for django
-\c dibo_security dibo_admin;
+
 
 
 CREATE TABLE ticket
@@ -81,13 +81,13 @@ EXECUTE FUNCTION ticket_trigger_func();
 INSERT INTO ticket (level,is_open, user_id, customer_first_name, customer_last_name, customer_phone_number, customer_email, problem_message)
 VALUES
 (1, DEFAULT, 1, 'Oscar',   'Petterson',    '29382918', 'ospe@dibo.dk',     'Brugeren er låst ude af sin konto'),
-(3, DEFAULT, 1, 'Adam',    'Danielsson',   '92818273', 'adda@dibo.dk',     'Brugerens comptuer er brudt sammen'),
-(1, DEFAULT, 2, 'William', 'Meldgaard',    '11827374', 'wime@dibo.dk',     'Brugeren kan ikke åbne sin mail'),
+(2, DEFAULT, 1, 'Adam',    'Danielsson',   '92818273', 'adda@dibo.dk',     'Brugerens comptuer er brudt sammen'),
+(3, DEFAULT, 2, 'William', 'Meldgaard',    '11827374', 'wime@dibo.dk',     'Brugeren kan ikke åbne sin mail'),
 (1, DEFAULT, 2, 'Niels',   'Wallin',       '26273829', 'niwa@dibo.dk',     'Brugeren kan ikke tilkoble sig WiFi'),
 (1, DEFAULT, 3, 'Ida',     'Holmberg',     '13627447', 'idho@dibo.dk',     'Brugeren meddeler at hendes touchpad stopper med at virke, hver formiddag efter hun har brugt sin computer et par timer'),
 (1, DEFAULT, 3, 'Oscar',   'Lundberg',     '28768744', 'oslu@dibo.dk',     'Brugeren har problemer med Airtame, hun kan ikke tilkoble sig'),
 (1, DEFAULT, 4, 'Per',     'Danielsson',   '28727364', 'peda@dibo.dk',     'Brugeren kan ikke forbinde sin computer til Clevershare'),
-(1, DEFAULT, 4, 'William', 'Fredriksson',  '43776142', 'wifr@dibo.dk',     'Brugeren meddeler, at han og flere andre lærere på HTX ikke kan komme på internettet. Problemet vedrører ikke lærere på andre afdelinger.');
+(3, DEFAULT, 4, 'William', 'Fredriksson',  '43776142', 'wifr@dibo.dk',     'Brugeren meddeler, at han og flere andre lærere på HTX ikke kan komme på internettet. Problemet vedrører ikke lærere på andre afdelinger.');
 
 
 \c postgres postgres
