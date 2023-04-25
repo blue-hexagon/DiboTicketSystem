@@ -1,34 +1,39 @@
 {% extends 'base/app/base.html' %}
 {% block content %}
   <h1 class="display-4 mt-4 mb-4 text-center">Alle Ticket Logs</h1>
-  <div class="container">
+  <div class="container d-flex flex-column">
     {% for ticketlog in ticketlogs %}
-      <div class=" border border-secondary px-3 pt-3 rounded-3 mb-3">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{{ ticketlog.action }} on `{{ ticketlog.table_name }}` by UID: {{ ticketlog.user_id }}</h5>
-          <small>{{ ticketlog.timestamp }}</small>
-        </div>
-        <div class="d-flex flex-row justify-content-between">
-          <div class="flex-column">
-            <p class="small">New Data:</p>
-            <ul class="">
-              {% for k,v in ticketlog.new_data.items %}
-                <li><span class="fw-bold">{{ k }}</span>: {{ v }} </li>
-              {% endfor %}
-            </ul>
+      <button class="btn btn-outline-dark rounded-3 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#{{ ticketlog.id }}" aria-expanded="false" aria-controls="collapseExample">
+        {{ ticketlog.timestamp }} --- {{ ticketlog.action }} på `{{ ticketlog.table_name }}` af {{ ticketlog.user_id }}
+      </button>
+      <div class="collapse" id="{{ ticketlog.id }}">
+        <div class="border border-2 border-secondary px-5 py-5 rounded-3 mb-3">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ ticketlog.timestamp }} --- {{ ticketlog.action }} på `{{ ticketlog.table_name }}` </h5>
           </div>
-          {% if ticketlog.old_data %}
-            <div class="flex-column">
-              <p class="small">Old Data:</p>
-              <ul class="">
-                {% for k,v in ticketlog.old_data.items %}
-                <li><span class="fw-bold">{{ k }}</span>: {{ v }} </li>
+          <div class="d-flex flex-row justify-content-start mt-3 mb-3">
+            <div class="flex-column me-2">
+              <h3 class="small">Ny Data</h3>
+              <ul class="list-group">
+                {% for k,v in ticketlog.new_data.items %}
+                  <li class="list-group-item"><span class="fw-bold">{{ k }}</span>: {{ v }} </li>
                 {% endfor %}
               </ul>
             </div>
-          {% endif %}
+            {% if ticketlog.old_data %}
+              <div class="flex-column">
+                <h3 class="small">Gammel Data</h3>
+                <ul class="list-group">
+                  {% for k,v in ticketlog.old_data.items %}
+                    <li class="list-group-item"><span class="fw-bold">{{ k }}</span>: {{ v }} </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          </div>
         </div>
       </div>
+
     {% endfor %}
   </div>
 {% endblock %}

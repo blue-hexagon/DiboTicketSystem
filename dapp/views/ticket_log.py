@@ -9,3 +9,5 @@ class TicketLogListView(ListView):
     ordering = '-id'
     # ordering = ['-published_date']
     template_name = 'ticket-log/list-view.html'
+
+

@@ -1,15 +1,16 @@
 from django.db import models
+from django.utils.timezone import now
 
 from dauth.models import AuthUser
 
 
 class Ticket(models.Model):
-    timestamp = models.DateTimeField(blank=True, null=True)
+    timestamp = models.DateTimeField(blank=True, null=True,default=now())
     level = models.IntegerField()
     problem_message = models.TextField()
     status_message = models.TextField(blank=True, null=True)
     solution_message = models.TextField(blank=True, null=True)
-    is_open = models.BooleanField()
+    is_open = models.BooleanField(default=True)
     user = models.ForeignKey(AuthUser, models.DO_NOTHING)
     customer_first_name = models.CharField(max_length=40)
     customer_last_name = models.CharField(max_length=40)

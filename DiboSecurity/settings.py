@@ -91,7 +91,7 @@ USE_TZ = True
 
 LOGIN_URL = '/accounts/login/'
 LOGOUT_URL = '/accounts/logout/'
-LOGIN_REDIRECT_URL = reverse_lazy("frontpage")
+LOGIN_REDIRECT_URL = reverse_lazy("ticket-list")
 LOGOUT_REDIRECT_URL = reverse_lazy("frontpage")
 
 STATICFILES_DIRS = [
