@@ -11,175 +11,23 @@
       "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\fonts\\en\\6d63d0501e5ed7b79dab.woff2",
       "publicPath": "http://localhost:8001/fonts/en/6d63d0501e5ed7b79dab.woff2?1fa40e8900654d2863d011707b9fb6f2"
     },
-    "main_js-0e915b857d85bcfc6cb1.js": {
-      "name": "main_js-0e915b857d85bcfc6cb1.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-0e915b857d85bcfc6cb1.js",
-      "publicPath": "http://localhost:8001/main_js-0e915b857d85bcfc6cb1.js"
+    "main_js-4de4bbd402353c7ed88b.js": {
+      "name": "main_js-4de4bbd402353c7ed88b.js",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-4de4bbd402353c7ed88b.js",
+      "publicPath": "http://localhost:8001/main_js-4de4bbd402353c7ed88b.js"
     },
-    "main_js-112eaeee8f16c2cb8590.js": {
-      "name": "main_js-112eaeee8f16c2cb8590.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-112eaeee8f16c2cb8590.js",
-      "publicPath": "http://localhost:8001/main_js-112eaeee8f16c2cb8590.js"
-    },
-    "main_js-2a78aba217adf859b0b4.js": {
-      "name": "main_js-2a78aba217adf859b0b4.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-2a78aba217adf859b0b4.js",
-      "publicPath": "http://localhost:8001/main_js-2a78aba217adf859b0b4.js"
-    },
-    "main_js-63106361318e645f3e8b.js": {
-      "name": "main_js-63106361318e645f3e8b.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-63106361318e645f3e8b.js",
-      "publicPath": "http://localhost:8001/main_js-63106361318e645f3e8b.js"
-    },
-    "main_js-7256b351e0811cc9f85e.js": {
-      "name": "main_js-7256b351e0811cc9f85e.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-7256b351e0811cc9f85e.js",
-      "publicPath": "http://localhost:8001/main_js-7256b351e0811cc9f85e.js"
-    },
-    "main_js-7a529a47cdd23c559c77.js": {
-      "name": "main_js-7a529a47cdd23c559c77.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js-7a529a47cdd23c559c77.js",
-      "publicPath": "http://localhost:8001/main_js-7a529a47cdd23c559c77.js"
-    },
-    "main_js.0e915b857d85bcfc6cb1.hot-update.js": {
-      "name": "main_js.0e915b857d85bcfc6cb1.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.0e915b857d85bcfc6cb1.hot-update.js",
-      "publicPath": "http://localhost:8001/main_js.0e915b857d85bcfc6cb1.hot-update.js"
-    },
-    "main_js.0e915b857d85bcfc6cb1.hot-update.json": {
-      "name": "main_js.0e915b857d85bcfc6cb1.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.0e915b857d85bcfc6cb1.hot-update.json",
-      "publicPath": "http://localhost:8001/main_js.0e915b857d85bcfc6cb1.hot-update.json"
-    },
-    "main_js.2a78aba217adf859b0b4.hot-update.js": {
-      "name": "main_js.2a78aba217adf859b0b4.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.2a78aba217adf859b0b4.hot-update.js",
-      "publicPath": "http://localhost:8001/main_js.2a78aba217adf859b0b4.hot-update.js"
-    },
-    "main_js.2a78aba217adf859b0b4.hot-update.json": {
-      "name": "main_js.2a78aba217adf859b0b4.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.2a78aba217adf859b0b4.hot-update.json",
-      "publicPath": "http://localhost:8001/main_js.2a78aba217adf859b0b4.hot-update.json"
-    },
-    "main_js.63106361318e645f3e8b.hot-update.js": {
-      "name": "main_js.63106361318e645f3e8b.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.63106361318e645f3e8b.hot-update.js",
-      "publicPath": "http://localhost:8001/main_js.63106361318e645f3e8b.hot-update.js"
-    },
-    "main_js.63106361318e645f3e8b.hot-update.json": {
-      "name": "main_js.63106361318e645f3e8b.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.63106361318e645f3e8b.hot-update.json",
-      "publicPath": "http://localhost:8001/main_js.63106361318e645f3e8b.hot-update.json"
-    },
-    "main_js.7256b351e0811cc9f85e.hot-update.js": {
-      "name": "main_js.7256b351e0811cc9f85e.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.7256b351e0811cc9f85e.hot-update.js",
-      "publicPath": "http://localhost:8001/main_js.7256b351e0811cc9f85e.hot-update.js"
-    },
-    "main_js.7256b351e0811cc9f85e.hot-update.json": {
-      "name": "main_js.7256b351e0811cc9f85e.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.7256b351e0811cc9f85e.hot-update.json",
-      "publicPath": "http://localhost:8001/main_js.7256b351e0811cc9f85e.hot-update.json"
-    },
-    "main_js.7a529a47cdd23c559c77.hot-update.js": {
-      "name": "main_js.7a529a47cdd23c559c77.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.7a529a47cdd23c559c77.hot-update.js",
-      "publicPath": "http://localhost:8001/main_js.7a529a47cdd23c559c77.hot-update.js"
-    },
-    "main_js.7a529a47cdd23c559c77.hot-update.json": {
-      "name": "main_js.7a529a47cdd23c559c77.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_js.7a529a47cdd23c559c77.hot-update.json",
-      "publicPath": "http://localhost:8001/main_js.7a529a47cdd23c559c77.hot-update.json"
-    },
-    "main_style-0e915b857d85bcfc6cb1.js": {
-      "name": "main_style-0e915b857d85bcfc6cb1.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-0e915b857d85bcfc6cb1.js",
-      "publicPath": "http://localhost:8001/main_style-0e915b857d85bcfc6cb1.js"
-    },
-    "main_style-112eaeee8f16c2cb8590.js": {
-      "name": "main_style-112eaeee8f16c2cb8590.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-112eaeee8f16c2cb8590.js",
-      "publicPath": "http://localhost:8001/main_style-112eaeee8f16c2cb8590.js"
-    },
-    "main_style-2a78aba217adf859b0b4.js": {
-      "name": "main_style-2a78aba217adf859b0b4.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-2a78aba217adf859b0b4.js",
-      "publicPath": "http://localhost:8001/main_style-2a78aba217adf859b0b4.js"
-    },
-    "main_style-63106361318e645f3e8b.js": {
-      "name": "main_style-63106361318e645f3e8b.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-63106361318e645f3e8b.js",
-      "publicPath": "http://localhost:8001/main_style-63106361318e645f3e8b.js"
-    },
-    "main_style-7256b351e0811cc9f85e.js": {
-      "name": "main_style-7256b351e0811cc9f85e.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-7256b351e0811cc9f85e.js",
-      "publicPath": "http://localhost:8001/main_style-7256b351e0811cc9f85e.js"
-    },
-    "main_style-7a529a47cdd23c559c77.js": {
-      "name": "main_style-7a529a47cdd23c559c77.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-7a529a47cdd23c559c77.js",
-      "publicPath": "http://localhost:8001/main_style-7a529a47cdd23c559c77.js"
-    },
-    "main_style.0e915b857d85bcfc6cb1.hot-update.js": {
-      "name": "main_style.0e915b857d85bcfc6cb1.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.0e915b857d85bcfc6cb1.hot-update.js",
-      "publicPath": "http://localhost:8001/main_style.0e915b857d85bcfc6cb1.hot-update.js"
-    },
-    "main_style.0e915b857d85bcfc6cb1.hot-update.json": {
-      "name": "main_style.0e915b857d85bcfc6cb1.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.0e915b857d85bcfc6cb1.hot-update.json",
-      "publicPath": "http://localhost:8001/main_style.0e915b857d85bcfc6cb1.hot-update.json"
-    },
-    "main_style.2a78aba217adf859b0b4.hot-update.js": {
-      "name": "main_style.2a78aba217adf859b0b4.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.2a78aba217adf859b0b4.hot-update.js",
-      "publicPath": "http://localhost:8001/main_style.2a78aba217adf859b0b4.hot-update.js"
-    },
-    "main_style.2a78aba217adf859b0b4.hot-update.json": {
-      "name": "main_style.2a78aba217adf859b0b4.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.2a78aba217adf859b0b4.hot-update.json",
-      "publicPath": "http://localhost:8001/main_style.2a78aba217adf859b0b4.hot-update.json"
-    },
-    "main_style.63106361318e645f3e8b.hot-update.js": {
-      "name": "main_style.63106361318e645f3e8b.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.63106361318e645f3e8b.hot-update.js",
-      "publicPath": "http://localhost:8001/main_style.63106361318e645f3e8b.hot-update.js"
-    },
-    "main_style.63106361318e645f3e8b.hot-update.json": {
-      "name": "main_style.63106361318e645f3e8b.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.63106361318e645f3e8b.hot-update.json",
-      "publicPath": "http://localhost:8001/main_style.63106361318e645f3e8b.hot-update.json"
-    },
-    "main_style.7256b351e0811cc9f85e.hot-update.js": {
-      "name": "main_style.7256b351e0811cc9f85e.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.7256b351e0811cc9f85e.hot-update.js",
-      "publicPath": "http://localhost:8001/main_style.7256b351e0811cc9f85e.hot-update.js"
-    },
-    "main_style.7256b351e0811cc9f85e.hot-update.json": {
-      "name": "main_style.7256b351e0811cc9f85e.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.7256b351e0811cc9f85e.hot-update.json",
-      "publicPath": "http://localhost:8001/main_style.7256b351e0811cc9f85e.hot-update.json"
-    },
-    "main_style.7a529a47cdd23c559c77.hot-update.js": {
-      "name": "main_style.7a529a47cdd23c559c77.hot-update.js",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.7a529a47cdd23c559c77.hot-update.js",
-      "publicPath": "http://localhost:8001/main_style.7a529a47cdd23c559c77.hot-update.js"
-    },
-    "main_style.7a529a47cdd23c559c77.hot-update.json": {
-      "name": "main_style.7a529a47cdd23c559c77.hot-update.json",
-      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style.7a529a47cdd23c559c77.hot-update.json",
-      "publicPath": "http://localhost:8001/main_style.7a529a47cdd23c559c77.hot-update.json"
+    "main_style-4de4bbd402353c7ed88b.js": {
+      "name": "main_style-4de4bbd402353c7ed88b.js",
+      "path": "C:\\Users\\zbctobia\\Desktop\\DiboSecurity\\assets\\webpack_bundles\\main_style-4de4bbd402353c7ed88b.js",
+      "publicPath": "http://localhost:8001/main_style-4de4bbd402353c7ed88b.js"
     }
   },
   "chunks": {
     "main_js": [
-      "main_js-112eaeee8f16c2cb8590.js",
-      "main_js.63106361318e645f3e8b.hot-update.js"
+      "main_js-4de4bbd402353c7ed88b.js"
     ],
     "main_style": [
-      "main_style-112eaeee8f16c2cb8590.js",
-      "main_style.63106361318e645f3e8b.hot-update.js"
+      "main_style-4de4bbd402353c7ed88b.js"
     ]
   },
   "publicPath": "http://localhost:8001/"

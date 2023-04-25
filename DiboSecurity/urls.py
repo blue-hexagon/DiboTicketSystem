@@ -5,6 +5,8 @@ from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView
 from django.urls import path, include
 
 from dapp.views.static import FrontPage, HelpPage, SupportPage, PrivacyPage, CookiesPolicyPage
+from dapp.views.ticket import TicketListView, TicketCreateView, TicketDetailView, TicketUpdateView, TicketCloseView, TicketListClosedView
+from dapp.views.ticket_log import TicketLogListView
 
 # @formatter:off
 """ Admin Site """
@@ -30,6 +32,13 @@ urlpatterns += [
     path("support/",    SupportPage.as_view(),    name="supportpage"),
     path("privacy/",    PrivacyPage.as_view(),    name="privacypage"),
     path("cookies/",    CookiesPolicyPage.as_view(),  name="about-cookies"),
+    path('app/tickets/list/', TicketListView.as_view(), name='ticket-list'),
+    path('app/tickets/list-closed/', TicketListClosedView.as_view(), name='ticket-list-closed'),
+    path('app/tickets/create/', TicketCreateView.as_view(), name='ticket-create'),
+    path('app/tickets/detail/<int:pk>/', TicketDetailView.as_view(), name='ticket-detail'),
+    path('app/tickets/update/<int:pk>/', TicketUpdateView.as_view(), name='ticket-update'),
+    path('app/tickets/close/<int:pk>/', TicketCloseView.as_view(), name='ticket-close'),
+    path('app/ticketlogs/', TicketLogListView.as_view(), name='ticketlog-list'),
 
     # Logs
 ]

@@ -59,7 +59,8 @@ class AuthUser(models.Model):
         verbose_name_plural = "Authentication Users"
 
 
-
+    def __str__(self):
+        return self.username
 
 
 class AuthUserGroups(models.Model):

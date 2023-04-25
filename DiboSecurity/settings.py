@@ -14,6 +14,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'webpack_loader',
     'DiboSecurity',
     'dapp',
@@ -118,3 +119,5 @@ WEBPACK_LOADER = {
         'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
     }
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'

@@ -1,0 +1,35 @@
+{% extends 'base/app/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Tickets</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Level</th>
+        <th>Problem</th>
+        <th>Bruger</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for ticket in tickets %}
+        <tr>
+          <td>{{ ticket.timestamp }}</td>
+          <td>{{ ticket.level }}</td>
+          <td>{{ ticket.problem_message }}</td>
+          <td>{{ ticket.user.username }}</td>
+          <td class="d-inline-flex">
+            <a href="{% url 'ticket-detail' ticket.pk %}" class="btn btn-primary me-1">Detaljer</a>
+          </td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="6">No tickets found.</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
